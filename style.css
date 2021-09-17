@@ -1,7 +1,11 @@
 @charset "utf-8";
-body, html, h1, h2, h3, h4, h5, p, div, span, a {
+body, html, h1, h2, h3, h4, h5, p, div, span, a, ul, li {
     margin: 0;
     padding: 0;
+}
+
+ul, li {
+    list-style: none;
 }
 
 body, html {
@@ -22,4 +26,45 @@ body {
 .notice a {
     font-size: 14px;
     color: #A3A3A3CC;
+}
+
+/* header */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 75px;
+    left: 0;
+}
+
+.header-inner {
+    width: 990px;
+    margin: 0 auto;
+    background: transparent;
+}
+
+.logo {
+    display: inline-block;
+    width: 116px;
+    height: 30px;
+    background: url(./image/logo.png) no-repeat;
+    background-size: contain;
+}
+
+.gnb-wrap {
+    display: flex;
+}
+
+.gnb {
+    color: #fff;
+}
+
+.gnb li {
+    display: inline-flex;
+    padding: 0 10px;
+}
+
+/* main */
+.main-img {
+    width: 100%;
+    
 }
