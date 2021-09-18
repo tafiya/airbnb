@@ -4,8 +4,9 @@ body, html, h1, h2, h3, h4, h5, p, div, span, a, ul, li {
     padding: 0;
 }
 
-ul, li {
+ul, li, a {
     list-style: none;
+    text-decoration: none;
 }
 
 body, html {
@@ -17,6 +18,8 @@ body {
 }
 
 .notice {
+    position: absolute;
+    width: 100%;
     padding: 23px 0;
     background: #222;
     text-align: center;
@@ -25,19 +28,21 @@ body {
 
 .notice a {
     font-size: 14px;
+    font-weight: 600;
     color: #A3A3A3CC;
+    text-decoration: underline;
 }
 
 /* header */
 .header {
     position: absolute;
     width: 100%;
-    top: 75px;
+    top: 63px;
     left: 0;
 }
 
 .header-inner {
-    width: 990px;
+    width: 1120px;
     margin: 0 auto;
     background: transparent;
 }
@@ -52,15 +57,107 @@ body {
 
 .gnb-wrap {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0;
 }
 
 .gnb {
+    font-size: 15px;
+}
+
+.gnb a {
     color: #fff;
 }
 
 .gnb li {
     display: inline-flex;
     padding: 0 10px;
+}
+
+.my a {
+    color: #fff;
+    font-size: 15px;
+}
+
+.my {
+    display: inline-flex;
+    align-items: center;
+}
+
+.my li ~ li {
+    margin-left: 10px;
+}
+
+.profile {
+    /* padding: 10px; */
+    background: #fff;
+    border-radius: 20px;
+}
+
+.profile a {
+    display: inline-flex;
+    padding: 10px;
+    color: #717171;
+    text-align: center;
+    align-items: center;
+}
+
+i.fas.fa-bars {
+    margin-right: 7px;
+}
+
+.profile a i {
+    font-size: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 80%;
+    height: 64px;
+    border-radius: 32px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.search-menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.search-menu label {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.search-menu input {
+    font-size: 14px;
+    color: #656565;
+    border: none;
+    padding: 0;
+}
+
+.search-menu ~ .search-menu:before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    width: 1px;
+    height: 30px;
+    background: #ddd;
+}
+
+.search-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 19px;
+    background: #FF385D;
 }
 
 /* main */

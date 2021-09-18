@@ -6,21 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>airbnb</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
-    <div class="notice"><a href="#">에어비앤비의 코로나19 대응 방안에 대한 정보를 확인하세요.</a></div>
+    <div class="notice"><a href="#">에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a></div>
     <header class="header">
         <div class="header-inner">
             <div class="gnb-wrap">
                 <a href="" class="logo"></a>
                 <ul class="gnb">
-                    <li>숙소</li>
-                    <li>체험</li>
-                    <li>온라인</li>
+                    <li><a href="">숙소</a></li>
+                    <li><a href="">체험</a></li>
+                    <li><a href="">온라인</a></li>
+                </ul>
+                <ul class="my">
+                    <li><a href="">호스트 되기</a></li>
+                    <li><a href=""><i class="fas fa-globe"></i></a></li>
+                    <li class="profile"><a href="">
+                        <i class="fas fa-bars"></i>
+                        <i class="far fa-user-circle"></i>
+                    </a></li>
                 </ul>
             </div>
             <div class="search-bar">
-
+                <a class="search-menu">
+                    <label for="location">위치</label>
+                    <input id="location" type="text" placeholder="어디로 여행가세요?">
+                </a>
+                <div class="search-menu">
+                    <label for="location">체크인</label>
+                    <input id="location" type="text" placeholder="날짜 입력">
+                </div>
+                <div class="search-menu">
+                    <label for="location">체크아웃</label>
+                    <input id="location" type="text" placeholder="날짜 입력">
+                </div>
+                <div class="search-menu">
+                    <label for="location">인원</label>
+                    <input id="location" type="text" placeholder="게스트 추가">
+                </div>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
         </div>
     </header>
