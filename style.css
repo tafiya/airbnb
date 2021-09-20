@@ -42,7 +42,7 @@ body {
 }
 
 .header-inner {
-    width: 1120px;
+    width: 90%;
     margin: 0 auto;
     background: transparent;
 }
@@ -113,9 +113,10 @@ i.fas.fa-bars {
 
 .search-bar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 10px 0 30px;
     width: 80%;
     height: 64px;
     border-radius: 32px;
@@ -161,7 +162,15 @@ i.fas.fa-bars {
 }
 
 /* main */
+/* .main {
+    background-image: url(./image/main.jpg);
+} */
 .main-img {
     width: 100%;
-    
+}
+
+.main-txt {
+    color: #222;
+    font-size: 18px;
+    text-align: center;
 }
