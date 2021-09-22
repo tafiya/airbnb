@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="/main.js">
+    <script src="/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="notice"><a href="#">에어비앤비의 코로나19 대응 방안에 대한 최신 정보를 확인하세요.</a></div>
@@ -20,6 +22,12 @@
                     <li><a href="">체험</a></li>
                     <li><a href="">온라인 체험</a></li>
                 </ul>
+                <div class="search-sticky">
+                    <p>검색 시작히기</p>
+                    <button class="search-sticky-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
                 <ul class="my">
                     <li><a href="">호스트 되기</a></li>
                     <li><a href=""><i class="fas fa-globe"></i></a></li>
@@ -243,14 +251,24 @@
             </div>  
             <div class="footer-info">
                 <div class="footer-left">
-                    <span>© 2021 Airbnb</span>
-                    <a href="">개인정보 처리방침</a>
-                    <a href="">개인정보 처리방침</a>
-                    <a href="">개인정보 처리방침</a>
-                    <a href="">개인정보 처리방침</a>
+                    <span>© 2021 Airbnb, Inc.</span><span class="dot">·</span>
+                    <a href="">개인정보 처리방침</a><span class="dot">·</span>
+                    <a href="">이용약관</a><span class="dot">·</span>
+                    <a href="">사이트맵</a><span class="dot">·</span>
+                    <a href="">한국의 변경된 환불정책</a>
                 </div>
             </div>  
         </div>
     </footer>
+    <script>
+        $(window).scroll(function() {
+	var scroll = $(window).scrollTop();
+	if (scroll >= 30) {
+		$(".header").addClass("sticky");
+	} else {
+		$(".header").removeClass("sticky");
+	}
+});
+    </script>
 </body>
 </html>
