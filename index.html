@@ -23,9 +23,9 @@
                     <li><a href="">온라인 체험</a></li>
                 </ul>
                 <div class="search-sticky">
-                    <p>검색 시작히기</p>
                     <button class="search-sticky-btn">
-                        <i class="fas fa-search"></i>
+                        <p>검색 시작히기</p>
+                        <i class="fas fa-search search-sticky-img"></i>
                     </button>
                 </div>
                 <ul class="my">
@@ -263,7 +263,7 @@
     <script>
         $(window).scroll(function() {
 	var scroll = $(window).scrollTop();
-	if (scroll >= 30) {
+	if (scroll >= 63) {
 		$(".header").addClass("sticky");
 	} else {
 		$(".header").removeClass("sticky");

@@ -215,11 +215,15 @@ i.fas.fa-bars {
 }
 
 .header.sticky {
-    position: sticky;
+    position: fixed;
     top: 0;
     background: #fff;
+    z-index: 10;
 }
 
+.header.sticky .gnb{
+    display: none;
+}
 .header.sticky .logo{
     width: 116px;
     height: 30px;
@@ -234,11 +238,12 @@ i.fas.fa-bars {
 }
 
 .search-sticky {
-    /* display: flex; */
     display: none;
     justify-content: space-between;
-    padding: 10px 12px;
-    width: 30%;
+    margin-left: 40px;
+    padding: 6px 2px 6px 10px;
+    width: 27%;
+    border: 1px solid #dddddd;
     border-radius: 30px;
     background: #fff;
     box-shadow: 0px 1px 2px rgb(0 0 0 / 8%), 0px 4px 12px rgb(0 0 0 / 5%);
@@ -246,17 +251,39 @@ i.fas.fa-bars {
 }
 
 .header.sticky .search-sticky {
-    display: flex;
+    display: block;
+}
+
+.header.sticky .my a {
+    color: #222;
 }
 
 .search-sticky-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+}
+
+.search-sticky-btn .fa-search:before {
+    content: "\f002";
+    line-height: 30px;
+}
+
+.search-sticky-img {
     width: 30px;
     height: 30px;
-    border: none;
     border-radius: 50%;
     color: #fff;
     font-size: 12px;
     background: #FF385D;
+}
+
+.header.sticky .profile {
+    border: 1px solid #ddd;
 }
 
 /* spot */
