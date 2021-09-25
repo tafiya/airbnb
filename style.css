@@ -44,6 +44,7 @@ body {
     width: 100%;
     top: 63px;
     left: 0;
+    transition: background ease 0.5s;
 
 }
 
@@ -78,11 +79,24 @@ body {
     font-size: 15px;
 }
 
-.gnb a {
+.gnb a{
     color: #fff;
 }
 
+.gnb li:hover::after {
+    content: "";
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
 .gnb li {
+    position: relative;
     padding: 0 10px;
 }
 
@@ -133,7 +147,7 @@ i.fas.fa-bars {
     border-radius: 32px;
     background: #fff;
     box-sizing: border-box;
-    transition: all ease 0.5s;
+    transition: all ease 1s;
 
 }
 
@@ -141,6 +155,7 @@ i.fas.fa-bars {
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
 }
 
 .search-menu label {
@@ -149,6 +164,7 @@ i.fas.fa-bars {
 }
 
 .search-menu input {
+    width: 110px;
     font-size: 14px;
     color: #656565;
     border: none;
@@ -231,11 +247,9 @@ i.fas.fa-bars {
     background-size: contain;
 }
 
-.header.sticky .search-bar {
+/* .header.sticky .search-bar {
     display: none;
-    transition: all ease 0.5s;
-
-}
+} */
 
 .search-sticky {
     display: none;
@@ -266,11 +280,12 @@ i.fas.fa-bars {
     width: 100%;
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .search-sticky-btn .fa-search:before {
     content: "\f002";
-    line-height: 30px;
+    line-height: 30px !important;
 }
 
 .search-sticky-img {
@@ -284,6 +299,10 @@ i.fas.fa-bars {
 
 .header.sticky .profile {
     border: 1px solid #ddd;
+}
+
+.header.sticky .search-bar {
+    display: none;
 }
 
 /* spot */
@@ -420,6 +439,7 @@ i.fas.fa-bars {
 
 /* footer */
 .footer {
+    margin: 0 auto;
     border-top: 1px solid #ddd;
     background-color: #f7f7f7;
 }
