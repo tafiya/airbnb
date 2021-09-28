@@ -35,6 +35,9 @@
                         <i class="fas fa-bars"></i>
                         <i class="far fa-user-circle"></i>
                     </a></li>
+                    <li>
+                        <img src="/image/dark-mode.png" class="dark-mode" id="icon" href="javascript:event();">
+                    </li>
                 </ul>
             </div>
             <div class="search-bar">
@@ -261,6 +264,34 @@
         </div>
     </footer>
     <script>
+document.getElementById("icon").onclick = function () {
+//   alert("Hello WOrld");
+document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")) {
+            icon.src = "images/day-mode.png"
+        }else{
+            icon.src = ""
+            
+        }
+}
+
+    var icon = document.getElementById("icon");
+    // var icon = document.querySelector(".dark-mode");
+    
+    icon.onClick = function (){
+
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")) {
+            icon.src = "/images/day-mode.png"
+        }else{
+            icon.src = "/image/dark-mode.png"
+            
+        }
+    }
+    </script>
+    <script>
+    
+
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 120) {
