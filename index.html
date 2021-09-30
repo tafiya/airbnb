@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="/main.js">
-    <script src="/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -24,7 +23,7 @@
                 </ul>
                 <div class="search-sticky">
                     <button class="search-sticky-btn">
-                        <p>검색 시작히기</p>
+                        <span>검색 시작하기</span>
                         <i class="fas fa-search search-sticky-img"></i>
                     </button>
                 </div>
@@ -36,46 +35,45 @@
                         <i class="far fa-user-circle"></i>
                     </a></li>
                     <li>
-                        <img src="/image/dark-mode.png" class="dark-mode" id="icon" href="javascript:event();">
+                        <img src="/image/dark-mode.png" class="dark-mode" id="icon" alt="다크모드">
                     </li>
                 </ul>
             </div>
             <div class="search-bar">
-                <a class="search-menu">
+                <div class="search-menu">
                     <label for="location">위치</label>
                     <input id="location" type="text" placeholder="어디로 여행가세요?">
-                </a>
-                <div class="search-menu">
-                    <label for="location">체크인</label>
-                    <input id="location" type="text" placeholder="날짜 입력">
+                </div>
+                <div  class="search-menu">
+                    <label for="checkin">체크인</label>
+                    <input id="checkin" type="text" placeholder="날짜 입력">
                 </div>
                 <div class="search-menu">
-                    <label for="location">체크아웃</label>
-                    <input id="location" type="text" placeholder="날짜 입력">
+                    <label for="checkout">체크아웃</label>
+                    <input id="checkout" type="text" placeholder="날짜 입력">
                 </div>
                 <div class="search-menu">
-                    <label for="location">인원</label>
-                    <input id="location" type="text" placeholder="게스트 추가">
+                    <label for="number">인원</label>
+                    <input id="number" type="text" placeholder="게스트 추가">
                 </div>
-                <button class="search-btn">
+                <div class="search-btn">
                     <i class="fas fa-search"></i>
-                </button>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <section class="main">
-            <img src="./image/main.jpg" alt="" class="main-img">
+        <section class="main main-img">
             <p class="main-txt">어디든 상관없이 떠나고 싶을 때 에어비앤비가 도와드립니다!</p>
             <a href="" class="main-search">
                 <span class="main-search-txt">유연한 검색</span>
             </a>
         </section>
         <section class="spot section">
-            <h2 class="sub-title">가까운 여행지 둘러보기</h2>
+            <h2 class="sub-title">가까운 여행지 둘러보기</h2>
             <a href="" class="spot-item">
                 <span class="spot-inner">
-                    <img src="/image/spot7.jpg" class="spot-img">
+                    <img src="/image/spot7.jpg" class="spot-img" alt="">
                     <span class="spot-txt">
                         <span class="spot-name">서울</span>
                         <span class="spot-distance">차로 5시간 거리</span>
@@ -84,7 +82,7 @@
             </a>
             <a href="" class="spot-item">
                 <span class="spot-inner">
-                    <img src="/image/spot3.jpg" class="spot-img">
+                    <img src="/image/spot3.jpg" class="spot-img" alt="">
                     <span class="spot-txt">
                         <span class="spot-name">부산</span>
                         <span class="spot-distance">차로 15분 거리</span>
@@ -93,7 +91,7 @@
             </a>
             <a href="" class="spot-item">
                 <span class="spot-inner">
-                    <img src="/image/spot4.png" class="spot-img">
+                    <img src="/image/spot4.png" class="spot-img" alt="">
                     <span class="spot-txt">
                         <span class="spot-name">양양군</span>
                         <span class="spot-distance">차로 5.5시간 거리</span>
@@ -102,7 +100,7 @@
             </a>
             <a href="" class="spot-item">
                 <span class="spot-inner">
-                    <img src="/image/spot8.png" class="spot-img">
+                    <img src="/image/spot8.png" class="spot-img" alt="">
                     <span class="spot-txt">
                         <span class="spot-name">속초시</span>
                         <span class="spot-distance">차로 5.5시간 거리</span>
@@ -111,7 +109,7 @@
             </a>
             <a href="" class="spot-item">
                 <span class="spot-inner">
-                    <img src="/image/spot5.jpg" class="spot-img">
+                    <img src="/image/spot5.jpg" class="spot-img" alt="">
                     <span class="spot-txt">
                         <span class="spot-name">대구</span>
                         <span class="spot-distance">차로 1.5시간 거리</span>
@@ -120,7 +118,7 @@
             </a>
             <a href="" class="spot-item">
                 <span class="spot-inner">
-                    <img src="/image/spot6.png" class="spot-img">
+                    <img src="/image/spot6.png" class="spot-img" alt="">
                     <span class="spot-txt">
                         <span class="spot-name">완주군</span>
                         <span class="spot-distance">차로 3.5시간 거리</span>
@@ -129,7 +127,7 @@
             </a>
             <a href="" class="spot-item">
                 <span class="spot-inner">
-                    <img src="/image/spot.jpg" class="spot-img">
+                    <img src="/image/spot.jpg" class="spot-img" alt="">
                     <span class="spot-txt">
                         <span class="spot-name">전주시</span>
                         <span class="spot-distance">차로 3.5시간 거리</span>
@@ -138,7 +136,7 @@
             </a>
             <a href="" class="spot-item">
                 <span class="spot-inner">
-                    <img src="/image/spot2.png" class="spot-img">
+                    <img src="/image/spot2.png" class="spot-img" alt="">
                     <span class="spot-txt">
                         <span class="spot-name">고성군</span>
                         <span class="spot-distance">차로 6시간 거리</span>
@@ -149,22 +147,22 @@
         <section class="accom section">
             <h2 class="sub-title">어디서나, 여행은 살아보는 거야!</h2>
             <div class="accom-inner">
-                <span class="accom-item">
+                <a href="" class="accom-item">
                     <img src="/image/acoom1.jpg" alt="" class="accom-img">
                     <span class="sub-txt">자연을 만끽할 수 있는 숙소</span>
-                </span>
-                <span class="accom-item">
+                </a>
+                <a href="" class="accom-item">
                     <img src="/image/acoom2.jpg" alt="" class="accom-img">
                     <span class="sub-txt">집 전체</span>
-                </span>
-                <span class="accom-item">
+                </a>
+                <a href="" class="accom-item">
                     <img src="/image/acoom3.jpg" alt="" class="accom-img">
                     <span class="sub-txt">반려동물 동반 가능</span>
-                </span>
-                <span class="accom-item">
+                </a>
+                <a href="" class="accom-item">
                     <img src="/image/acoom5.jpg" alt="" class="accom-img">
                     <span class="sub-txt">독특한 공간</span>
-                </span>
+                </a>
             </div>
         </section>   
         <section class="hosting section">
@@ -186,13 +184,13 @@
                 </a>
                 <a href="" class="entertain-item">
                     <img src="/image/enter2.jpg" alt="" class="entertain-img">
-                    <p class="sub-txt">체험</p>
-                    <p class="subtxt-desc">가까운 곳에서 즐길 수 있는 잊지 못할 체험을 찾아보세요.</p>
+                    <p class="sub-txt">온라인 체험</p>
+                    <p class="subtxt-desc">온라인 체험으로 집에서 랜선 여행을 즐기세요.</p>
                 </a>
                 <a href="" class="entertain-item">
                     <img src="/image/enter3.jpg" alt="" class="entertain-img">
-                    <p class="sub-txt">체험</p>
-                    <p class="subtxt-desc">가까운 곳에서 즐길 수 있는 잊지 못할 체험을 찾아보세요.</p>
+                    <p class="sub-txt">추천 컬렉션: 여행 본능을 깨우는 체험</p>
+                    <p class="subtxt-desc">호스트와 실시간으로 소통하면서 액티비티를 즐겨보세요.</p>
                 </a>
                 
             </div>
@@ -264,37 +262,18 @@
         </div>
     </footer>
     <script>
-document.getElementById("icon").onclick = function () {
-//   alert("Hello WOrld");
-document.body.classList.toggle("dark-theme");
-        if(document.body.classList.contains("dark-theme")) {
-            icon.src = "images/day-mode.png"
-        }else{
-            icon.src = ""
-            
-        }
-}
-
-    var icon = document.getElementById("icon");
-    // var icon = document.querySelector(".dark-mode");
-    
-    icon.onClick = function (){
-
+    document.getElementById("icon").onclick = function () {
         document.body.classList.toggle("dark-theme");
-        if(document.body.classList.contains("dark-theme")) {
-            icon.src = "/images/day-mode.png"
-        }else{
-            icon.src = "/image/dark-mode.png"
-            
-        }
-    }
-    </script>
-    <script>
-    
+            if(document.body.classList.contains("dark-theme")) {
+                icon.src = "./image/day-mode.png"
+            }else{
+                icon.src = "./image/dark-mode.png"
+            }
+        };
 
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
-        if (scroll >= 120) {
+        if (scroll >= 110) {
             $(".header").addClass("sticky");
         } else {
             $(".header").removeClass("sticky");
