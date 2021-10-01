@@ -152,7 +152,6 @@ section {
 }
 
 .profile {
-    /* padding: 10px; */
     background: var( --primary-color);
     border-radius: 20px;
 }
@@ -160,7 +159,6 @@ section {
 .profile a {
     display: inline-flex;
     padding: 8px 7px 8px 12px;
-    /* color: #717171; */
     color: var(--tertiary-color);
     text-align: center;
     align-items: center;
